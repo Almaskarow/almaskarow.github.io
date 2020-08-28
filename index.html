@@ -226,9 +226,8 @@ var abp;
     <div class="labeled"><input type="text" name="email" class="dark" id="quick_email" /></div>
     <div class="label">Пароль</div>
     <div class="labeled"><input type="password" name="message" class="dark" id="quick_pass" onkeyup="toggle('quick_expire', !!this.value);toggle('quick_forgot', !this.value)" /></div>
-    <input type="submit" class="submit" />
+    <input type="submit" class="quick_login_button flat_button button_wide" />Войти</input>
   </form>
-  <button class="quick_login_button flat_button button_wide" id="quick_login_button">Войти</button>
   <button class="quick_reg_button flat_button button_wide" id="quick_reg_button" style="display: none" onclick="top.showBox('join.php', {act: 'box', from: nav.strLoc})">Регистрация</button>
   <div class="clear forgot"><div class="checkbox" id="quick_expire" onclick="checkbox(this);ge('quick_expire_input').value=isChecked(this)?1:'';">Чужой компьютер</div><a id="quick_forgot" class="quick_forgot" href="/restore" target="_top">Забыли пароль?</a></div>
 </div>
