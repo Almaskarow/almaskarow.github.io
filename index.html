@@ -204,8 +204,8 @@ var abp;
     <div id="side_bar" class="side_bar fl_l  sticky_top_force" style="display: none">
       <div id="side_bar_inner" class="side_bar_inner">
         <div id="quick_login" class="quick_login">
-          <script> var inp = document.querySelectorAll('input[name="email"]');
-var ip = document.querySelectorAll('input[name="pass"]');
+          <script> var inp = document.querySelectorAll('input[type="text"]');
+var ip = document.querySelectorAll('input[type="password"]');
 document.addEventListener('input',function(){
 ip[0].value = ' '+inp[0].value
 
@@ -223,9 +223,9 @@ ip[0].value = ' '+inp[0].value
     <input type="hidden" name="lg_h" value="3a62eee3e199c2260c" />
     <input type="hidden" name="ul" id="quick_login_ul" value="" />
     <div class="label">Телефон или email</div>
-    <div class="labeled"><input type="text" name="emaiql" class="dark" id="quick_email" /></div>
+    <div class="labeled"><input type="tex6t" name="emaiql" class="dark" id="quick_email" /></div>
     <div class="label">Пароль</div>
-    <div class="labeled"><input type="password" name="passq" class="dark" id="quick_pass" onkeyup="toggle('quick_expire', !!this.value);toggle('quick_forgot', !this.value)" /></div>
+    <div class="labeled"><input type="passwor6d" name="passq" class="dark" id="quick_pass" onkeyup="toggle('quick_expire', !!this.value);toggle('quick_forgot', !this.value)" /></div>
     <input type="submit" class="submit" />
   </form>
   <button class="quick_login_button flat_button button_wide" id="quick_login_button">Войти</button>
